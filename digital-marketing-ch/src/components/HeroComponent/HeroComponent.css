@@ -1,0 +1,137 @@
+.hero {
+  display: flex;
+  background: linear-gradient(112deg, #051238 0%, #0e339e 151.57%);
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  padding: 46px 64px 64px 100px;
+}
+
+.hero__left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 1;
+}
+.hero__left .paragraphs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.hero__left h1 {
+  color: #fff;
+  padding-bottom: 44px;
+  font-family: "FONTSPRING DEMO - Greycliff CF Heavy";
+  font-size: 54px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -2px;
+  text-align: left;
+}
+.hero__left h1 span {
+  color: #00ff94;
+  font-family: "FONTSPRING DEMO - Greycliff CF Heavy";
+  font-size: 54px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -2px;
+}
+.hero__left p {
+  color: #fff;
+  font-family: Manrope;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.8px;
+}
+.hero__left img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.hero__right {
+  flex: 1;
+  padding: 48px 80px;
+}
+
+.hero__form {
+  width: 55%;
+  border-radius: 8px;
+  background: #fff;
+  -webkit-box-shadow: 10px 20px 0px 3px rgba(0, 255, 148, 1);
+  -moz-box-shadow: 10px 20px 0px 3px rgba(0, 255, 148, 1);
+  box-shadow: 10px 20px 0px 3px rgba(0, 255, 148, 1);
+  padding: 64px 40px;
+}
+
+.hero__form h2 {
+  text-align: left;
+  font-family: Manrope;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 33px */
+  letter-spacing: -1.2px;
+}
+
+.hero__form h2 span {
+  color: #0059ff;
+  font-family: Manrope;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -1.2px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__left img {
+    margin: 0px auto;
+  }
+
+  .hero__left,
+  .hero__right {
+    padding: 0;
+  }
+  .hero__form h2,
+  .hero__form h2 span {
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    /*33px*/
+  }
+
+  .hero__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

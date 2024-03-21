@@ -1,0 +1,109 @@
+.tables-success {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0px auto;
+  width: 90%;
+  gap: 40px;
+}
+.table-left,
+.table-right {
+  width: 50%;
+}
+.table-left {
+  background: linear-gradient(112deg, #051238 0%, #0e339e 151.57%);
+  margin-left: 64px;
+}
+.table-right {
+  margin-right: 64px;
+  background-color: #ffffff;
+}
+.table-left,
+.table-right {
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 16px;
+  box-shadow: 0px 4px 30px 0px rgba(101, 119, 131, 0.1);
+}
+
+.success-section .tables-success {
+  margin-top: 64px;
+}
+
+.cell {
+  padding: 32px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.cell::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 3px solid rgba(5, 18, 56, 0.2);
+}
+.cell .first-paragraph {
+  color: #fff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 33px */
+  letter-spacing: -1.2px;
+}
+.cell .second-paragraph {
+  color: #fff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.8px;
+}
+.cell:last-child {
+  padding: 100px 0px;
+}
+.table-right h4 {
+  color: #0059ff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.8px;
+}
+.table-right p {
+  color: #051238;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.8px;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .tables-success {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .table-left,
+  .table-right {
+    width: 90%;
+    margin: 0;
+  }
+  .cell {
+    width: 100%;
+  }
+}
