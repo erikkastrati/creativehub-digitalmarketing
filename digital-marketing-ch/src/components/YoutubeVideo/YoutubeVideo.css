@@ -1,0 +1,14 @@
+.youtube {
+  position: relative;
+}
+.youtube::after {
+  content: "";
+  position: absolute;
+  right: -26.5px;
+  bottom: -20px;
+  width: 664px;
+  height: 381px;
+  border-radius: 10px;
+  background: #01fe94;
+  z-index: -1;
+}

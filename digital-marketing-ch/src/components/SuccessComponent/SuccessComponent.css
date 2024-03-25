@@ -1,14 +1,25 @@
+.success-section {
+  margin-bottom: 192px;
+}
+.titleofsuccess .title h3 {
+  text-align: center;
+}
+.titleofsuccess .title p {
+  width: 40%;
+  margin: 0px auto;
+}
 .tables-success {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   margin: 0px auto;
   width: 90%;
-  gap: 40px;
+  gap: 20px;
 }
 .table-left,
 .table-right {
   width: 50%;
+  border: 1px solid rgba(5, 18, 56, 0.2);
 }
 .table-left {
   background: linear-gradient(112deg, #051238 0%, #0e339e 151.57%);
@@ -26,7 +37,6 @@
   align-items: center;
   flex-direction: column;
   border-radius: 16px;
-  box-shadow: 0px 4px 30px 0px rgba(101, 119, 131, 0.1);
 }
 
 .success-section .tables-success {
@@ -37,8 +47,43 @@
   padding: 32px 24px;
   position: relative;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.table-left .cell:nth-child(1),
+.table-right .cell:nth-child(1) {
+  height: 109px;
+}
+.table-left .cell:nth-child(2),
+.table-right .cell:nth-child(2) {
+  height: 109px;
 }
 
+.table-left .cell:nth-child(3),
+.table-right .cell:nth-child(3) {
+  height: 197px;
+}
+.table-left .cell:nth-child(3),
+.table-right .cell:nth-child(3) {
+  height: 197px;
+}
+.table-left .cell:nth-child(4),
+.table-right .cell:nth-child(4) {
+  height: 109px;
+}
+.table-left .cell:nth-child(5),
+.table-right .cell:nth-child(5) {
+  height: 133px;
+}
+.table-left .cell:nth-child(6),
+.table-right .cell:nth-child(6) {
+  height: 133px;
+}
+.table-left .cell:nth-child(7),
+.table-right .cell:nth-child(7) {
+  height: 385px;
+}
 .cell::after {
   content: "";
   position: absolute;
@@ -48,10 +93,13 @@
   height: 1px;
   border-bottom: 3px solid rgba(5, 18, 56, 0.2);
 }
+.cell:last-child::after {
+  content: none; /* Remove the underline */
+}
 .cell .first-paragraph {
   color: #fff;
   text-align: center;
-  font-family: Manrope;
+  font-family: "Manrope";
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -61,20 +109,20 @@
 .cell .second-paragraph {
   color: #fff;
   text-align: center;
-  font-family: Manrope;
+  font-family: "Manrope";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 24px */
   letter-spacing: -0.8px;
 }
-.cell:last-child {
+/* .cell:last-child {
   padding: 100px 0px;
-}
+} */
 .table-right h4 {
   color: #0059ff;
   text-align: center;
-  font-family: Manrope;
+  font-family: "Manrope";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -84,7 +132,7 @@
 .table-right p {
   color: #051238;
   text-align: center;
-  font-family: Manrope;
+  font-family: "Manrope";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -94,15 +142,57 @@
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
   .tables-success {
-    flex-direction: column;
+    display: flex;
+  }
+  .success-section .titleofsuccess .title h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .titleofsuccess .title p {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .success-section .tables-success {
+    margin-top: 0px;
+  }
+  .table-left,
+  .table-right {
+    width: 20%;
+  }
+  .success-section .title h3 {
+    width: 79%;
+    color: #051238;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+    letter-spacing: -2px;
+  }
+  .success-section .title h3 span {
+    color: #0059ff;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -2px;
+  }
+  .success-section .title p {
+    margin: 24px 0px 25px 0px;
+  }
+  .tables-success {
     gap: 20px;
   }
 
   .table-left,
   .table-right {
-    width: 90%;
+    width: 42%;
     margin: 0;
   }
+
   .cell {
     width: 100%;
   }

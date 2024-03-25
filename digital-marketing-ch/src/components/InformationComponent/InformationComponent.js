@@ -9,6 +9,7 @@ const InformationComponent = () => {
       image: require("../../assets/30-cards.png"),
       altText: "Image 1",
       title: "Creative Hub се најде на листата на Форбес под 30 ( 2019 )",
+      showButton: false,
     },
     {
       image: require("../../assets/image 19.png"),
@@ -27,10 +28,13 @@ const InformationComponent = () => {
   return (
     <>
       <div className="information-part">
-        <TitleComponent
-          title="Учи од светски-наградувано школо"
-          paragraph="Македонски, а светски бренд"
-        />
+        <div className="information-title">
+          <TitleComponent
+            className="title-information"
+            title="Учи од светски-наградувано школо"
+            paragraph1="Македонски, а светски бренд"
+          />
+        </div>
         <BoxComponent boxes={boxes} className="boxes-information" />
       </div>
     </>

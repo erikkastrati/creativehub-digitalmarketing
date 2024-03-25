@@ -1,0 +1,73 @@
+.program_section {
+  width: 100%;
+  margin: 0px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 81px;
+  margin-bottom: 181px;
+}
+.program-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.programs-left h3 {
+  color: #051238;
+  padding-bottom: 32px;
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 40px */
+  letter-spacing: -1.8px;
+}
+.program-right img {
+  width: 110%;
+}
+.programs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 20px; /* Adjust the gap between grid items */
+}
+.program {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.program img {
+  background: url("../../assets/Path\ 440.png") no-repeat;
+  border-radius: 50%;
+  background-size: auto;
+  background-position: center;
+}
+.program h4 {
+  color: rgba(5, 18, 56, 0.8);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.8px;
+}
+@media only screen and (max-width: 768px) {
+  .program_section {
+    padding: 5px;
+    margin: 29px 0px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .program-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .program-right img {
+    width: 341.542px;
+    height: 207.027px;
+  }
+}

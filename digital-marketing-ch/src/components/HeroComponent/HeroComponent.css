@@ -5,6 +5,7 @@
   align-items: center;
   gap: 80px;
   padding: 46px 64px 64px 100px;
+  height: auto;
 }
 
 .hero__left {
@@ -14,32 +15,59 @@
   flex-direction: column;
   flex: 1;
 }
-.hero__left .paragraphs {
+
+.hero__left .paragraphs img {
+  margin-top: -15px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  justify-content: center;
+}
+.container_paragraphs {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 44px;
+}
+.container_paragraphs .paragraphs {
+  margin-top: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+.container_paragraphs .paragraphs:last-child {
+  margin-bottom: 44px;
 }
 .hero__left h1 {
   color: #fff;
-  padding-bottom: 44px;
-  font-family: "FONTSPRING DEMO - Greycliff CF Heavy";
+  font-family: Manrope;
   font-size: 54px;
-  font-style: italic;
-  font-weight: 900;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 54px */
+  letter-spacing: -2px;
+}
+
+.hero__left .second {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 200;
   line-height: 100%;
   letter-spacing: -2px;
-  text-align: left;
 }
-.hero__left h1 span {
+.hero__left .third {
   color: #00ff94;
-  font-family: "FONTSPRING DEMO - Greycliff CF Heavy";
+  font-family: Manrope;
   font-size: 54px;
-  font-style: italic;
-  font-weight: 900;
+  font-style: normal;
+  font-weight: 200;
   line-height: 100%;
   letter-spacing: -2px;
 }
-.hero__left p {
+.hero__left .paragraphs p {
   color: #fff;
   font-family: Manrope;
   margin-bottom: 16px;
@@ -51,8 +79,8 @@
 }
 .hero__left img {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 .hero__right {
   flex: 1;
@@ -60,26 +88,29 @@
 }
 
 .hero__form {
-  width: 55%;
+  width: 477px;
+
   border-radius: 8px;
   background: #fff;
   -webkit-box-shadow: 10px 20px 0px 3px rgba(0, 255, 148, 1);
   -moz-box-shadow: 10px 20px 0px 3px rgba(0, 255, 148, 1);
   box-shadow: 10px 20px 0px 3px rgba(0, 255, 148, 1);
   padding: 64px 40px;
+  overflow: hidden;
 }
 
 .hero__form h2 {
-  text-align: left;
+  margin-bottom: 40px;
+  color: #051238;
   font-family: Manrope;
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 110%; /* 33px */
+  line-height: 110%; /* 30.8px */
   letter-spacing: -1.2px;
 }
 
-.hero__form h2 span {
+.hero__form h2 .blue-form {
   color: #0059ff;
   font-family: Manrope;
   font-size: 22px;
@@ -103,35 +134,82 @@
   border-radius: 5px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1168px) {
   .hero {
-    height: auto;
-    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0px 10px;
+    gap: 5px;
   }
   .hero__left img {
-    margin: 0px auto;
+    text-align: left;
   }
-
+  .hero__left h1 {
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 32px */
+    letter-spacing: -2px;
+  }
+  .hero__left .second {
+    color: #fff;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%;
+    letter-spacing: -2px;
+  }
+  .hero__left .third {
+    color: #00ff94;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%;
+    letter-spacing: -2px;
+  }
   .hero__left,
   .hero__right {
     padding: 0;
   }
-  .hero__form h2,
-  .hero__form h2 span {
+  .hero__form h2 {
     font-family: Manrope;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     /*33px*/
   }
+  .hero__form h2 span {
+    color: #00ff94;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 100%;
+    letter-spacing: -2px;
+  }
 
   .hero__right {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
+    padding-bottom: 140px;
+  }
+  .hero__form h2 {
+    margin-bottom: 17px;
+  }
+  .hero__form {
+    width: 100%;
+  }
+  .container_paragraphs .paragraphs:last-child {
+    margin-bottom: 14px;
   }
 }

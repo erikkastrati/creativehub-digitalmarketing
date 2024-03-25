@@ -7,9 +7,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   max-width: 100%;
   overflow-x: hidden;
+  width: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.blueimageleft {
+  filter: drop-shadow(-30px 10px 0px #0059ff);
+  border-radius: 150px 50px;
+}
+.blueimageright {
+  filter: drop-shadow(30px 10px 0px #0059ff);
+  border-radius: 150px 50px;
 }

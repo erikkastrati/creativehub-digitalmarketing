@@ -1,0 +1,97 @@
+.long-card {
+  width: 450px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 48px 40px;
+  margin: 20px;
+}
+
+.long-card .image {
+  text-align: left;
+  margin-bottom: 32px;
+}
+.long-card .row-1 {
+  height: 100px;
+}
+.long-card .row-1 p {
+  color: #051238;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 90%; /* 18px */
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+}
+.long-card .row-1 p:nth-child(2) {
+  color: #051238;
+
+  font-family: Manrope;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%; /* 33px */
+  letter-spacing: -1.2px;
+}
+.row-1 p {
+  margin: 32px 0px;
+}
+.long-card .row-2 {
+  margin-top: 32px;
+  height: 450px;
+}
+.long-card .row-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 140px;
+}
+.long-card .paragraph-with-tick {
+  margin-bottom: 20px;
+}
+.long-card .paragraph-with-tick p {
+  color: #051238;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 100% */
+  letter-spacing: -0.4px;
+}
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.row p {
+  margin: 0;
+}
+
+.button-offer {
+  border-radius: 6px;
+  background: #00ff94;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  color: #051238;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 18px */
+  letter-spacing: -0.6px;
+}
+.button-offer:hover {
+  background-color: #fff;
+}

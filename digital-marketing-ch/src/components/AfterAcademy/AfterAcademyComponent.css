@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+}
+.afteracademy_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 81px;
+}
+.left-afteracademy h3 {
+  color: #051238;
+  font-family: "Manrope";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 40px */
+  letter-spacing: -1.8px;
+  margin-bottom: 32px;
+}
+.left-afteracademy p {
+  color: rgba(5, 18, 56, 0.8);
+  font-family: "Manrope";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.8px;
+  margin-bottom: 6px;
+}
+.left-afteracademy p:last-child {
+  color: rgba(5, 18, 56, 0.6);
+  font-family: "Manrope";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.8px;
+}
+@media screen and (max-width: 768px) {
+  .afteracademy_section {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-afteracademy {
+    display: flex;
+    justify-content: center;
+  }
+  .right-afteracademy img {
+    width: 80%;
+  }
+}

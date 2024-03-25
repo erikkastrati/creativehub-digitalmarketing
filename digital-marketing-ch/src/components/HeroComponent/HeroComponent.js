@@ -8,25 +8,25 @@ const HeroComponent = () => {
     <div className="hero">
       <div className="hero__left">
         <h1>
-          Академија за <br />
-          дигитален маркетинг 
-          <br /> спремен за работа по
+          Академија за дигитален маркетинг 
+          <br /> <span className="second">спремен за работа по</span>
           <br />
-          <span>дипломирање</span>
+          <span className="third">дипломирање</span>
         </h1>
-        <div className="paragraphs">
-          <img src={Ticks} alt="ticks" />
-          <p>90 дена Флексибилна пракса ПАРАЛЕЛНО со Академијата</p>
+        <div className="container_paragraphs">
+          <div className="paragraphs">
+            <img src={Ticks} alt="ticks" />
+            <p>90 дена Флексибилна пракса ПАРАЛЕЛНО со Академијата</p>
+          </div>
+          <div className="paragraphs">
+            <img src={Ticks} alt="ticks" />
+            <p>Македонска, Американска и ЕУ диплома</p>
+          </div>
+          <div className="paragraphs">
+            <img src={Ticks} alt="ticks" />
+            <p>10x Вештини за успех (AI, Преговарање, Деловна комуникација)</p>
+          </div>
         </div>
-        <div className="paragraphs">
-          <img src={Ticks} alt="ticks" />
-          <p>Македонска, Американска и ЕУ диплома</p>
-        </div>
-        <div className="paragraphs">
-          <img src={Ticks} alt="ticks" />
-          <p>10x Вештини за успех (AI, Преговарање, Деловна комуникација)</p>
-        </div>
-
         <img
           src={GoogleReview}
           alt="google-review"
@@ -39,7 +39,8 @@ const HeroComponent = () => {
       <div className="hero__right">
         <form className="hero__form">
           <h2>
-            Дали си подготвен да се <span>пријавиш денес?</span>
+            Дали си подготвен да се 
+            <span className="blue-form">пријавиш денес?</span>
           </h2>
           <div className="form-group">
             <input type="text" placeholder="Име и презиме" />

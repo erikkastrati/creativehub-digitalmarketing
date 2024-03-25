@@ -6,12 +6,14 @@ import "../SuccessComponent/SuccessComponent.css";
 const SuccessComponent = () => {
   return (
     <div className="success-section">
-      <TitleComponent
-        title="Creative Hub те поставува за"
-        tenXText="10x"
-        successText="успех"
-        paragraph="На пазарот има многу програми, и голем дел од нив се квалитетни и ќе те научат на слични вештини и ќе ти помогнат за вработување, но Creative Hub има една работа која не прави единствени."
-      />
+      <div className="titleofsuccess">
+        <TitleComponent
+          title="Creative Hub те поставува за"
+          tenXText="10x"
+          successText="успех"
+          paragraph1="На пазарот има многу програми, и голем дел од нив се квалитетни и ќе те научат на слични вештини и ќе ти помогнат за вработување, но Creative Hub има една работа која не прави единствени."
+        />
+      </div>
       <div className="tables-success">
         <div className="table-left">
           <div className="cell">
@@ -28,9 +30,7 @@ const SuccessComponent = () => {
           <div className="cell">
             <h4 className="second-paragraph">Помош при вработување</h4>
           </div>
-          <div className="cell">
-            <h4 className="second-paragraph">Помош при вработување</h4>
-          </div>
+
           <div className="cell">
             <h4 className="second-paragraph">
               <img src={CloseCircle} alt="close-circle" />

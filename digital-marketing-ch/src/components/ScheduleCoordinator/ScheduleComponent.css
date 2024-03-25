@@ -1,0 +1,81 @@
+.schedule-section {
+  width: 100%;
+  margin: 0;
+  border-radius: 16px;
+  background: var(
+    --gradient,
+    linear-gradient(156deg, #051238 0%, #0e339e 192.36%)
+  );
+}
+.schedule-conversation {
+  padding-top: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.img-coordinator {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+.details-schedules {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 64px;
+}
+.details-schedules h2 {
+  color: #fff;
+  font-family: ""Manrope"";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 40px */
+  letter-spacing: -1.8px;
+}
+.details-schedules h2 span {
+  color: #00ff94;
+  font-family: ""Manrope"";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -1.8px;
+}
+.details-schedules button {
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .img-coordinator {
+    width: 216px;
+    height: 193px;
+    flex-shrink: 0;
+    margin-top: 8px;
+  }
+
+  .details-schedules h2 {
+    color: #fff;
+
+    font-family: "" "Manrope" "";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+    letter-spacing: -1.8px;
+  }
+  .details-schedules h2 span {
+    color: #00ff94;
+    font-family: ""Manrope"";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1.8px;
+  }
+  .details-schedules button {
+    display: flex;
+    justify-content: center;
+  }
+}

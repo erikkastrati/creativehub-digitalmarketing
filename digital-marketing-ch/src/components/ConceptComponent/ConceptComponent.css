@@ -1,0 +1,24 @@
+.concepts-section {
+  margin-bottom: 195px;
+}
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: c;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.column:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 10;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #000; /* Adjust border color as needed */
+}

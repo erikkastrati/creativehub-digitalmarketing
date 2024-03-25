@@ -1,0 +1,90 @@
+.title-diploma {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-diploma .title h3 {
+  padding-bottom: 64px;
+  width: 80%;
+  color: #051238;
+  text-align: center;
+  margin: 0px auto;
+  font-family: Manrope;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 48px */
+  letter-spacing: -2px;
+}
+.boxes-diploma .box {
+  padding: 32px;
+  height: 284px;
+  transition: all 0.9s ease-in-out;
+}
+.boxes .box h3 {
+  padding: 24px 0px;
+  color: #051238;
+  font-family: "Manrope";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: -0.288px;
+}
+.boxes-diploma .box p {
+  padding-top: 26px;
+  color: rgba(5, 18, 56, 0.6);
+  font-family: "Manrope";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.8px;
+}
+.boxes-diploma .box img {
+  width: 48px;
+  height: 48px;
+  background: transparent;
+}
+.boxes-diploma .box:hover {
+  background: linear-gradient(112deg, #051238 0%, #0e339e 151.57%);
+}
+.boxes-diploma .box:hover p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Manrope";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.8px;
+}
+.boxes-diploma .box:hover h3 {
+  color: #fff;
+  font-family: "Manrope";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: -0.288px;
+}
+@media screen and (max-width: 768px) {
+  .container .title {
+    width: 100%;
+  }
+  .container .title h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 38px;
+    color: #051238;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+    letter-spacing: -1.8px;
+  }
+}
