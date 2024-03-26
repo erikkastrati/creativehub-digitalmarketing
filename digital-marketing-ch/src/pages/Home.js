@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import HeroComponent from "../components/HeroComponent/HeroComponent";
 import InformationComponent from "../components/InformationComponent/InformationComponent";
 import SuccessComponent from "../components/SuccessComponent/SuccessComponent";
@@ -17,7 +17,20 @@ import DuringCreativeHub from "../components/DuringCreativeHub/DuringCreativeHub
 import SuccessStories from "../components/SuccessStories/SuccessStories";
 import ArijanaVideoComponent from "../components/ArijanaVideoComponent/ArijanaVideoComponent";
 import TestimonialsComponent from "../components/TestimonialsComponent/TestimonialsComponent";
+import TeamMembersMobileComponent from "../components/TeamMembersComponent/TeamMemberMobileComponent";
 const Home = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
   return (
     <div>
       <HeroComponent />
@@ -31,7 +44,7 @@ const Home = () => {
       <DiplomaComponent />
       <AfterAcademyComponent />
       <BonusComponent />
-      <TeamMembersComponent />
+      {isMobile ? <TeamMembersMobileComponent /> : <TeamMembersComponent />}
       <OffersComponent />
       <ScheduleComponent />
       <HowToFinanceComponent />

@@ -1,5 +1,5 @@
 import React from "react";
-import "git./DuringCreativeHub/DuringCreativeHub.css";
+import "../DuringCreativeHub/DuringCreativeHub.css";
 import TitleComponent from "../TitleComponent/TitleComponent.js";
 import ButtonComponent from "../Button/ButtonComponent.js";
 import BoxComponent from "../Box/BoxComponent.js";
