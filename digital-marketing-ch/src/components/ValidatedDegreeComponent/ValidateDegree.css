@@ -1,0 +1,59 @@
+.validatedegree-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 160px 0px 108px 0px;
+}
+.validatedegree-section .title h3 {
+  color: #051238;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 48px */
+  letter-spacing: -2px;
+}
+.validatedegree-section .title p {
+  padding: 24px 0px;
+  width: 70%;
+  color: rgba(5, 18, 56, 0.6);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.4px;
+  margin: 0px auto;
+}
+.boxes-validatedegree {
+  padding: 0px 20px;
+}
+.boxes-validatedegree .box {
+  height: 420px;
+}
+.boxes-validatedegree .box h3 {
+  padding: 20px;
+}
+.boxes-validatedegree .box img {
+  width: 416px;
+  height: 278px;
+}
+@media screen and (max-width: 748px) {
+  .validatedegree-section .title h3 {
+    color: #051238;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+    letter-spacing: -2px;
+  }
+  .boxes-validatedegree .box img {
+    margin: 0px auto;
+  }
+}

@@ -2,7 +2,8 @@ import React from "react";
 import TitleComponent from "../TitleComponent/TitleComponent";
 import TeamMemberCard from "../TeamMemberCard/TeamMemberCard";
 import "../TeamMembersComponent/TeamMembersComponent.css";
-const TeamMembersComponent = () => {
+import SliderComponent from "../SliderComponent/SliderComponent";
+const TeamMembersMobileComponent = () => {
   const teamMembers = [
     {
       imageSrc: require("../../assets/team/Arijana slika 1.png"),
@@ -99,12 +100,13 @@ const TeamMembersComponent = () => {
         <TitleComponent title="Запознај го предавачкиот тим" />
       </div>
       <div className="team-members">
-        {teamMembers.map((member, index) => (
+        {/* {teamMembers.map((member, index) => (
           <TeamMemberCard key={index} member={member} />
-        ))}
+        ))} */}
+        <SliderComponent />
       </div>
     </div>
   );
 };
 
-export default TeamMembersComponent;
+export default TeamMembersMobileComponent;

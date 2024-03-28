@@ -1,9 +1,33 @@
 .testional-container {
   margin-bottom: 192px;
+  padding: 0px 20px;
 }
 .title-testimonial .title {
   margin-bottom: 64px;
 }
 .title-testimonial .title h3 {
   margin-bottom: 24px;
+}
+.boxes-testimonials {
+  width: 100%;
+}
+.boxes-testimonials .box button {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .testional-container {
+    margin-bottom: 102px;
+    padding: 0px 20px;
+  }
+  .title-testimonial .title h3 {
+    color: #051238;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+    letter-spacing: -2px;
+  }
 }

@@ -9,7 +9,24 @@
 }
 @media screen and (max-width: 768px) {
   .video-container .title h3 {
+    color: #051238;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+    letter-spacing: -1.8px;
     margin-bottom: 24px;
+  }
+  .video-container .title h3 .bluetext {
+    color: #0059ff;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1.8px;
   }
   .video {
     width: 20%;

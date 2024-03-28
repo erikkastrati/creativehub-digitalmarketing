@@ -21,7 +21,7 @@ const InformationComponent = () => {
       image: require("../../assets/America start 6 years 1.png"),
       altText: "Image 2",
       title:
-        "Creative Hub доби награда за време на Светскиот Економски Форум во Давос",
+        "Creative Hub Academy стана лиценцирана Американска школа во Септември 2023",
     },
   ];
 
@@ -35,6 +35,7 @@ const InformationComponent = () => {
             paragraph1="Македонски, а светски бренд"
           />
         </div>
+
         <BoxComponent boxes={boxes} className="boxes-information" />
       </div>
     </>

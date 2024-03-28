@@ -6,7 +6,14 @@
   justify-content: center;
   margin-bottom: 187px;
 }
-
+.practice-left img {
+  filter: drop-shadow(-24px 7px 0px #0059ff);
+  border-radius: 150px 60px;
+  width: 542px;
+  height: 514px;
+  flex-shrink: 0;
+  margin-left: 64px;
+}
 .practice-right {
   width: 40%;
   display: flex;
@@ -67,11 +74,12 @@
     margin-bottom: 90px;
     justify-content: center;
     align-items: center;
+    padding: 0px 20px;
   }
   .practice-left img {
     width: 341.542px;
     height: 207.027px;
-    flex-shrink: 0;
+    margin: 0px auto;
   }
   .practice-right {
     width: 100%;
@@ -85,5 +93,17 @@
   }
   .practice-right p {
     text-align: left;
+    color: rgba(5, 18, 56, 0.8);
+    width: 90%;
+    font-family: Manrope;
+    padding: 0px 22px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.3px;
+  }
+  .practices {
+    margin-top: 22px;
   }
 }

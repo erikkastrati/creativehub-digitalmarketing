@@ -8,11 +8,7 @@ const PracticeComponent = () => {
   return (
     <div className="practice-section">
       <div className="practice-left">
-        <img
-          src={PracticeImage}
-          className="blueimageleft"
-          alt="practiceimage"
-        />
+        <img src={PracticeImage} alt="practiceimage" />
       </div>
       <div className="practice-right">
         <ButtonPractice>Чекор 2</ButtonPractice>

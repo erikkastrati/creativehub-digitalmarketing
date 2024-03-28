@@ -37,27 +37,18 @@ const HeroComponent = () => {
         />
       </div>
       <div className="hero__right">
-        <form className="hero__form">
+        <div className="temporarily">
           <h2>
-            Дали си подготвен да се 
-            <span className="blue-form">пријавиш денес?</span>
+            Следната група започнува <br />
+            во Мај 2024!
           </h2>
-          <div className="form-group">
-            <input type="text" placeholder="Име и презиме" />
-          </div>
-          <div className="form-group">
-            <input type="email" placeholder="Емаил Адреса" />
-          </div>
-          <div className="form-group">
-            <input type="text" placeholder="Телефон" />
-          </div>
-          <div className="form-group">
-            <select>
-              <option>Одбери Академија</option>
-            </select>
-          </div>
-          <ButtonComponent>Аплицирај</ButtonComponent>
-        </form>
+          <span>Пополни ја формата и нашиот координатор ќе те контактира!</span>
+          <a
+            href="https://calendly.com/stojanco_ch/30min?month=2024-03"
+            target="_blank">
+            <ButtonComponent>Аплицирај</ButtonComponent>
+          </a>
+        </div>
       </div>
     </div>
   );

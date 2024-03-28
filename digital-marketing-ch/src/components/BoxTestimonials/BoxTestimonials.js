@@ -2,7 +2,8 @@ import React from "react";
 import "../BoxTestimonials/BoxTestimonials.css";
 import ButtonComponent from "../Button/ButtonComponent";
 import Star from "../../assets/star.svg";
-const BoxTestimonials = ({ boxes }) => {
+
+const BoxTestimonials = ({ boxes, links }) => {
   return (
     <div className="box-testimonials-container">
       {boxes &&
@@ -11,7 +12,7 @@ const BoxTestimonials = ({ boxes }) => {
             {/* Stars */}
             <div className="stars">
               {Array.from({ length: 5 }, (_, i) => (
-                <img src={Star} alt="star" />
+                <img key={i} src={Star} alt="star" />
               ))}
             </div>
 
@@ -22,9 +23,16 @@ const BoxTestimonials = ({ boxes }) => {
             </div>
 
             {/* Button */}
-            <div className="button-testiomonials">
-              <ButtonComponent> Закажи разговор со Лори тука</ButtonComponent>
-            </div>
+
+            {links && box.link && (
+              <div className="button-testimonials">
+                <hr />
+                <ButtonComponent
+                  onClick={() => window.open(box.link, "_blank")}>
+                  {box.buttonContent}
+                </ButtonComponent>
+              </div>
+            )}
           </div>
         ))}
     </div>
