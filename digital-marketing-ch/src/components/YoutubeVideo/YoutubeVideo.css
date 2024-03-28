@@ -12,20 +12,7 @@
 }
 
 .youtube iframe {
-  width: 500px;
-}
-
-.youtube::after {
-  content: "";
-  position: absolute;
-  right: -26.5px;
-  bottom: -20px;
-  width: 100%; /* Make the width responsive */
-  padding-bottom: 56.25%; /* Maintain the aspect ratio */
-  border-radius: 10px;
-  background: #01fe94;
-
-  z-index: -1;
+  width: 400px;
 }
 
 @media (max-width: 768px) {
@@ -33,8 +20,5 @@
     right: -13px;
     bottom: -210px;
     height: 100%;
-  }
-  .youtube iframe {
-    width: auto;
   }
 }

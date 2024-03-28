@@ -8,6 +8,10 @@
   margin-top: 64px;
 }
 @media screen and (max-width: 768px) {
+  .video-container {
+    width: 100%;
+    margin-bottom: 192px;
+  }
   .video-container .title h3 {
     color: #051238;
     text-align: center;

@@ -19,6 +19,7 @@ import ArijanaVideoComponent from "../components/ArijanaVideoComponent/ArijanaVi
 import TestimonialsComponent from "../components/TestimonialsComponent/TestimonialsComponent";
 import GetMegaCourse from "../components/Get+MegaCoursesComponent/GetMegaCourse";
 import ValidatedDegree from "../components/ValidatedDegreeComponent/ValidatedDegree";
+import ContactUsComponent from "../components/ContactUsComponent/ContactUsComponent";
 const Home = () => {
   return (
     <div>
@@ -43,6 +44,7 @@ const Home = () => {
       <DuringCreativeHub />
       <SuccessStories />
       <ArijanaVideoComponent />
+      <ContactUsComponent />
     </div>
   );
 };
