@@ -1,5 +1,4 @@
-import React from "react";
-import "../pages/Home.css";
+
 import HeroComponent from "../components/HeroComponent/HeroComponent";
 import InformationComponent from "../components/InformationComponent/InformationComponent";
 import SuccessComponent from "../components/SuccessComponent/SuccessComponent";
@@ -18,10 +17,24 @@ import DuringCreativeHub from "../components/DuringCreativeHub/DuringCreativeHub
 import SuccessStories from "../components/SuccessStories/SuccessStories";
 import ArijanaVideoComponent from "../components/ArijanaVideoComponent/ArijanaVideoComponent";
 import TestimonialsComponent from "../components/TestimonialsComponent/TestimonialsComponent";
+import TeamMembersMobileComponent from "../components/TeamMembersComponent/TeamMemberMobileComponent";
 import GetMegaCourse from "../components/Get+MegaCoursesComponent/GetMegaCourse";
 import ValidatedDegree from "../components/ValidatedDegreeComponent/ValidatedDegree";
 import ContactUsComponent from "../components/ContactUsComponent/ContactUsComponent";
+
 const Home = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
   return (
     <div className="home-page">
       <HeroComponent />
@@ -38,7 +51,7 @@ const Home = () => {
       <ValidatedDegree />
       <AfterAcademyComponent />
       <BonusComponent />
-      <TeamMembersComponent />
+      {isMobile ? <TeamMembersMobileComponent /> : <TeamMembersComponent />}
       <OffersComponent />
 
       <HowToFinanceComponent />
