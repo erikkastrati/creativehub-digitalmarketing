@@ -7,7 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   max-width: 100%;
   overflow-x: hidden;
-  width: 100%;
+
+  max-width: 100%;
 }
 
 code {
@@ -21,4 +22,12 @@ code {
 .blueimageright {
   filter: drop-shadow(30px 10px 0px #0059ff);
   border-radius: 150px 50px;
+}
+@media screen and (max-width: 768px) {
+  /* Adjust styles for mobile devices */
+  /* For example: */
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
 }

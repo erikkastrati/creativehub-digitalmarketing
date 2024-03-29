@@ -146,6 +146,7 @@
 @media screen and (max-width: 768px) {
   .success-section {
     margin-bottom: 120px;
+    padding: 0px 20px;
   }
   .tables-success {
     display: flex;
@@ -197,7 +198,7 @@
   }
   .table-left,
   .table-right {
-    width: 40%;
+    width: 35%;
     margin: 0;
   }
   .table-right img {

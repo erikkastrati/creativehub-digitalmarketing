@@ -1,4 +1,5 @@
 import React from "react";
+import "../pages/Home.css";
 import HeroComponent from "../components/HeroComponent/HeroComponent";
 import InformationComponent from "../components/InformationComponent/InformationComponent";
 import SuccessComponent from "../components/SuccessComponent/SuccessComponent";
@@ -22,7 +23,7 @@ import ValidatedDegree from "../components/ValidatedDegreeComponent/ValidatedDeg
 import ContactUsComponent from "../components/ContactUsComponent/ContactUsComponent";
 const Home = () => {
   return (
-    <div>
+    <div className="home-page">
       <HeroComponent />
       <InformationComponent />
       <SuccessComponent />
