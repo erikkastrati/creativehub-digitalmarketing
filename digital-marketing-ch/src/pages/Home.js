@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+
 import HeroComponent from "../components/HeroComponent/HeroComponent";
 import InformationComponent from "../components/InformationComponent/InformationComponent";
 import SuccessComponent from "../components/SuccessComponent/SuccessComponent";
@@ -36,7 +36,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="home-page">
       <HeroComponent />
       <InformationComponent />
       <SuccessComponent />
