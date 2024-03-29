@@ -19,7 +19,7 @@ const BonusComponent = () => {
   ];
   return (
     <div className="container-bonus">
-      <TitleComponent title="10X Мега Вештини за успех " />
+      <TitleComponent title="10X Мега Вештини за успех  " />
 
       <div className="boxes-bonus">
         <BoxComponent boxes={boxes} className="box-bonus" />

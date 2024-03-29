@@ -20,8 +20,11 @@
 }
 .boxes-diploma .box {
   padding: 32px;
-  height: 284px;
-  transition: all 0.9s ease-in-out;
+  height: 224px;
+  transition: all 0.9s ease;
+}
+.boxes-diploma .box:hover {
+  background: linear-gradient(112deg, #051238 0%, #0e339e 151.57%);
 }
 .boxes .box h3 {
   padding: 24px 0px;
@@ -48,9 +51,7 @@
   height: 48px;
   background: transparent;
 }
-.boxes-diploma .box:hover {
-  background: linear-gradient(112deg, #051238 0%, #0e339e 151.57%);
-}
+
 .boxes-diploma .box:hover p {
   color: rgba(255, 255, 255, 0.8);
   font-family: "Manrope";
@@ -70,10 +71,13 @@
   letter-spacing: -0.288px;
 }
 @media screen and (max-width: 768px) {
-  .container .title {
+  .container-diploma {
+    padding: 0px 20px;
+  }
+  .container-diploma .title {
     width: 100%;
   }
-  .container .title h3 {
+  .container-diploma .title h3 {
     width: 100%;
     display: flex;
     justify-content: center;

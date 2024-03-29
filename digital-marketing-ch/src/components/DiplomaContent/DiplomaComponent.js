@@ -27,7 +27,7 @@ const DiplomaComponent = () => {
     },
   ];
   return (
-    <div className="container">
+    <div className="container-diploma">
       <div className="title-diploma">
         <ButtonPractice>Чекор 4</ButtonPractice>
         <TitleComponent title="Стекни се со валидирана и признаена диплома" />

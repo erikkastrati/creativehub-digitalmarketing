@@ -1,14 +1,14 @@
-.container {
+.container-earning {
   width: 100%;
   margin-bottom: 210px;
 }
-.container .title-earning {
+.container-earning .title-earning {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 64px;
 }
-.container .title-earning h3 {
+.container-earning .title-earning h3 {
   width: 80%;
   margin: 0px auto;
 }
@@ -48,16 +48,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
+  .container-earning {
     margin-bottom: 54px;
+    padding: 0px 20px;
   }
-  .title-earning {
+  .container-earning .title-earning {
     display: flex;
     justify-content: flex-start;
     padding: 0;
-    margin: 10px 0px;
+    width: 90%;
   }
-  .container .title-earning h3 {
+  .container-earning .title-earning h3 {
     width: 100%;
     color: #051238;
     font-family: Manrope;
@@ -83,8 +84,13 @@
     line-height: 100%; /* 24px */
     letter-spacing: -1.8px;
   }
+  .earn-rightpart {
+    width: 80%;
+    display: flex;
+  }
   .earn-rightpart img {
-    width: 344px;
+    width: 324px;
     height: 233px;
+    text-align: center;
   }
 }

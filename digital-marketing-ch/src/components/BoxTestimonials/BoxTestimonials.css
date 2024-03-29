@@ -11,7 +11,7 @@
 }
 
 .box-testimonials > * {
-  padding: 32px; /* Padding applied to all direct children elements */
+  padding: 32px;
 }
 .box-testimonials p {
   width: 80%;
@@ -41,8 +41,13 @@
   align-items: center;
 }
 
-.box-testimonials .button-testimonials {
-  padding: 20px;
+.button-testimonials button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  transition: all 0.7s ease;
+  margin: 0px auto;
 }
 
 @media screen and (max-width: 748px) {
@@ -56,5 +61,8 @@
   .box-testimonials {
     width: auto;
     height: auto;
+  }
+  .button-testimonials {
+    font-size: 14px;
   }
 }

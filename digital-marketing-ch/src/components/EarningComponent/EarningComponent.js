@@ -6,7 +6,7 @@ import Tick from "../../assets/tick.svg";
 import EarnImage from "../../assets/Prv Cas Sredeni 1.png";
 const EarningComponent = () => {
   return (
-    <div className="container">
+    <div className="container-earning">
       <div className="title-earning">
         <TitleComponent title="Почни да заработуваш онлајн и почни да аплицираш за работа" />
       </div>

@@ -11,13 +11,17 @@ import AfterAcademyComponent from "../components/AfterAcademy/AfterAcademyCompon
 import BonusComponent from "../components/BonusComponent/BonusComponent";
 import TeamMembersComponent from "../components/TeamMembersComponent/TeamMembersComponent";
 import OffersComponent from "../components/OffersComponent/OffersComponent";
-import ScheduleComponent from "../components/ScheduleCoordinator/ScheduleComponent";
+// import ScheduleComponent from "../components/ScheduleCoordinator/ScheduleComponent";
 import HowToFinanceComponent from "../components/HowToFinance/HowToFinanceComponent";
 import DuringCreativeHub from "../components/DuringCreativeHub/DuringCreativeHub";
 import SuccessStories from "../components/SuccessStories/SuccessStories";
 import ArijanaVideoComponent from "../components/ArijanaVideoComponent/ArijanaVideoComponent";
 import TestimonialsComponent from "../components/TestimonialsComponent/TestimonialsComponent";
 import TeamMembersMobileComponent from "../components/TeamMembersComponent/TeamMemberMobileComponent";
+import GetMegaCourse from "../components/Get+MegaCoursesComponent/GetMegaCourse";
+import ValidatedDegree from "../components/ValidatedDegreeComponent/ValidatedDegree";
+import ContactUsComponent from "../components/ContactUsComponent/ContactUsComponent";
+
 const Home = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
@@ -37,20 +41,24 @@ const Home = () => {
       <InformationComponent />
       <SuccessComponent />
       <ConceptComponent />
+
       <ProgramComponent />
+      <GetMegaCourse />
       <PracticeComponent />
       <TestimonialsComponent />
       <EarningComponent />
       <DiplomaComponent />
+      <ValidatedDegree />
       <AfterAcademyComponent />
       <BonusComponent />
       {isMobile ? <TeamMembersMobileComponent /> : <TeamMembersComponent />}
       <OffersComponent />
-      <ScheduleComponent />
+
       <HowToFinanceComponent />
       <DuringCreativeHub />
       <SuccessStories />
       <ArijanaVideoComponent />
+      <ContactUsComponent />
     </div>
   );
 };

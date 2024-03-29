@@ -26,11 +26,15 @@
   background: linear-gradient(90deg, #003aff 0%, #003eff 100%);
   /* To maintain aspect ratio */
 }
+.information-part .box-container h3 {
+  padding: 32px 14px;
+}
 
 @media screen and (max-width: 768px) {
   .information-part {
     max-width: 100%;
     margin: 40px 0px;
+    padding: 0px 20px;
   }
   .information-title .title {
     width: 76%;

@@ -133,6 +133,18 @@ const HeroComponent = () => {
           </div>
           <ButtonComponent type="submit">Аплицирај</ButtonComponent>
         </form>
+        <div className="temporarily">
+          <h2>
+            Следната група започнува <br />
+            во Мај 2024!
+          </h2>
+          <span>Пополни ја формата и нашиот координатор ќе те контактира!</span>
+          <a
+            href="https://calendly.com/stojanco_ch/30min?month=2024-03"
+            target="_blank">
+            <ButtonComponent>Аплицирај</ButtonComponent>
+          </a>
+        </div>
       </div>
     </div>
   );

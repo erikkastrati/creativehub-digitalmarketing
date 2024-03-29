@@ -3,7 +3,7 @@ import AfterAcademy from "../../assets/after-academy.png";
 import "../AfterAcademy/AfterAcademyComponent.css";
 const AfterAcademyComponent = () => {
   return (
-    <div className="container">
+    <div className="container-afteracademy">
       <div className="afteracademy_section">
         <div className="left-afteracademy">
           <h3>Што после Академија?</h3>

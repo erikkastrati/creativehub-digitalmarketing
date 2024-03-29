@@ -8,6 +8,9 @@
 /* .boxes .box {
   margin: 20px;
 } */
+.boxes-bonus {
+  padding: 0px 20px;
+}
 .boxes-bonus .box {
   height: 145px;
   padding: 32px;
@@ -29,6 +32,16 @@
   .container-bonus {
     width: 100%;
     margin-bottom: 92px;
+  }
+  .container-bonus h3 {
+    color: #051238;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+    letter-spacing: -2px;
   }
   .boxes-bonus {
     display: flex;
